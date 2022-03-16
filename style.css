@@ -30,6 +30,7 @@ body {
     top: 0;
     left: 0;
     transform: translateX(-250px);
+    transition: .3s ease-in-out;
     width: 250px;
     z-index: 1;
 }
