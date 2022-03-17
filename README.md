@@ -1,12 +1,13 @@
 # Aula 09 - Primeiro feedback
 
-A atividade consiste em manipular o DOM da lista de itens. Basicamente irá criar os elementos, adicionar o texto e adicionar no elemento `<section id="carrinho">"` os elementos conforme as instruções.
+Grupo:
+Matheus Barreto, Rafael Queiróz, Thalles Denner, Nicholas Ruas Viegas, Pedro Oliveira
         
 ## Instruções
 
 1. **(20pts)** Esta sessão deverá ser apresentada sempre que houver o click no **botão Menu**: `<button class="l-sidebar__btn"type="button">Menu</button>`. - OK
 
-1.1. Quando houver o click do usuário, a sidebar deverá ser apresentada: `<div class="l-sidebar">`
+1.1. Quando houver o click do usuário, a sidebar deverá ser apresentada: `<div class="l-sidebar">` - OK
 
 2. **(20pts)** O usuário poderá usar o teclado para abrir ou fechar a sidebar. No caso, as tecla `Space`.
 
