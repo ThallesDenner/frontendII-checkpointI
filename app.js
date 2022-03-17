@@ -4,6 +4,7 @@
     let btnAbrirMenu = document.getElementById('btnAbrirMenu');
     let controleMenu = false;
     let documento = document.body;
+    let statusSidebar;
 
     btnAbrirMenu.addEventListener('click', () => {
         sidebarMenu.style.transform='translateX(0)';
@@ -25,6 +26,11 @@
         }
     }
     );
+
+    documento.addEventListener("dblclick", () => {
+        statusSidebar = sidebarMenu.classList.toggle('visivel');
+        statusSidebar ? sidebarMenu.style.transform='translateX(0px)' : sidebarMenu.style.transform='translateX(-250px)';
+    })
 
    
     // Adicione sua implementação aqui...
