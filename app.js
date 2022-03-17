@@ -11,6 +11,7 @@
         controleMenu = true;
     });
 
+
     documento.addEventListener('keyup', (tecla) => {
         if(tecla.code == 'Space') {
             if (controleMenu == true) {
