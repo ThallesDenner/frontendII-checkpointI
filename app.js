@@ -11,9 +11,9 @@
         controleMenu = true;
     });
 
-
-    documento.addEventListener('keyup', (tecla) => {
-        if(tecla.code == 'Space') {
+    documento.addEventListener('keydown', (tecla) => {
+        if(tecla.code == 'Space' && tecla.target === documento) {
+            tecla.preventDefault(); 
             if (controleMenu == true) {
                 sidebarMenu.style.transform = 'translateX(-250px)';
                 controleMenu = false;
