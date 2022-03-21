@@ -5,6 +5,7 @@
     let controleMenu = false;
     let documento = document.body;
     let statusSidebar;
+    let tooltips = document.querySelectorAll('.tooltip');
 
     btnAbrirMenu.addEventListener('click', () => {
         sidebarMenu.style.transform='translateX(0)';
@@ -32,6 +33,15 @@
         statusSidebar = sidebarMenu.classList.toggle('visivel');
         statusSidebar ? sidebarMenu.style.transform='translateX(0px)' : sidebarMenu.style.transform='translateX(-250px)';
     })
+
+    documento.addEventListener('mousemove', fn, false);
+
+    function fn(e) {
+        for (var i=tooltips.length; i--;) {
+            tooltips[i].style.left = e.pageX + 'px';
+            tooltips[i].style.top = e.pageY + 'px';
+        }
+    }
 
    
     // Adicione sua implementação aqui...
