@@ -7,9 +7,10 @@
     let statusSidebar;
     let tooltips = document.querySelectorAll('.tooltip');
 
-    btnAbrirMenu.addEventListener('click', () => {
+    btnAbrirMenu.addEventListener('click', (e) => {
         sidebarMenu.style.transform='translateX(0)';
         controleMenu = true;
+        document.activeElement.blur();
     });
 
     documento.addEventListener('keydown', (tecla) => {
